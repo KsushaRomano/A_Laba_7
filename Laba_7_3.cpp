@@ -1,12 +1,15 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
+#include <windows.h>
 
 using namespace std;
 
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-	int k, i;
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	int i;
 	string S1, S2;
 	cout << "Введите первую строку: ";
 	getline(cin, S1);
